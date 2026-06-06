@@ -1,4 +1,4 @@
-package gestiontransport;
+apackage gestiontransport;
 import java.util.Scanner;
 import java.util.ArrayList;
 public class ReservePlace {
