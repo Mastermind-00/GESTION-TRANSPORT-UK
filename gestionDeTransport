@@ -20,6 +20,56 @@ public class MENU {
 		 case 1:
 			 //ajouter un trajet 
 			 ajouteTrajet.ajouterTrajet();
+package gestiontransport;
+
+public class Trajet {
+	// les variables
+	int idTrajet, nombrePlaces;
+	String lieuDepart, lieuArrive, dateDepart, dateArrive, duree;
+	// cration du constructeur d'initialisation (avec paramettre)
+	public Trajet(int idTrajet,int nombrePlaces, String lieuDepart,
+			String lieuArrive, String dateDepart, String dateArrive, String duree) {
+		this.idTrajet = idTrajet;
+		this.nombrePlaces = nombrePlaces;
+		this.lieuDepart = lieuDepart;
+		this.lieuArrive = lieuArrive;
+		this.dateDepart = dateDepart;
+		this.dateArrive = dateArrive;
+		this.duree = duree;
+package gestiontransport;
+import java.util.Scanner;
+public class ajouteTrajet {
+
+	public static void ajouterTrajet() {
+		// definition variable (type chaine de caractere)
+int idTrajet, nombrePlaces;
+String lieuDepart, lieuArrive, dateDepart, dateArrive, duree;
+// Ajout du trajet par la direction des transports
+Scanner clavier = new Scanner(System.in);
+System.out.println("Veuillez entre la date de depart");
+ dateDepart = clavier.nextLine();
+ System.out.println("Veuillez entre la date Arrive");
+  dateArrive = clavier.nextLine();
+ System.out.println("Veuillez entre le lieu de depart");
+  lieuDepart = clavier.nextLine();
+ System.out.println("Veuillez entre le lieu d'arrive");
+  lieuArrive = clavier.nextLine();
+ System.out.println("Veuillez entre la duree");
+  duree = clavier.nextLine();
+ System.out.println("Veuillez entre l'identifiant du trajet");
+  idTrajet = clavier.nextInt();
+  System.out.println("Veuillez entre le nombre de place");
+   nombrePlaces = clavier.nextInt();
+   
+ //cration de l'objet trajet
+ 		Trajet monTrajet = new Trajet(idTrajet, nombrePlaces, lieuDepart, lieuArrive, 
+                       dateDepart, dateArrive, duree);
+ 		System.out.println("Trajet ajoute avec succes !");
+
+	}
+
+}
+
 			 break;
 		 case 2 :
 			 //reserve une place
