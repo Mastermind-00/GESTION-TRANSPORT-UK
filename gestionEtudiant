@@ -1,0 +1,44 @@
+package gestiontransport;
+import java.util.Scanner;
+import java.util.ArrayList;
+public class MENU {
+
+	public static void main(String[] args) {
+		// recuperation de la des information des passagers pour les afficher
+	ArrayList<Passager> listePassagers = new ArrayList<Passager>(); 
+	int choix;
+	Scanner clavier = new Scanner(System.in);
+	do {
+		System.out.println("===GESTION DE TRANSPORT===");
+		System.out.println("1. Ajouter un trajet");
+		System.out.println("2. Reserve une place");
+		System.out.println("3. Liste des passagers");
+		System.out.println("0. Quitter");
+		System.out.println("votre choix : ");
+		 choix = clavier.nextInt();
+		 switch(choix) {
+		 case 1:
+			 //ajouter un trajet 
+			 ajouteTrajet.ajouterTrajet();
+			 break;
+		 case 2 :
+			 //reserve une place
+			 ReservePlace.reserverPlace(listePassagers);
+			break;
+		 case 3:
+			 //liste des passagers 
+			 listPassagers.afficherPassagers(listePassagers);
+			 break;
+		 case 0:
+			 System.out.println("Au revoir !");
+			 break;
+		 }
+		
+	} while(choix !=0);
+		
+		
+	}
+	
+
+	}
+
