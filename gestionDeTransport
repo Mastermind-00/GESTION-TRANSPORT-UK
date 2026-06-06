@@ -20,7 +20,6 @@ public class MENU {
 		 case 1:
 			 //ajouter un trajet 
 			 ajouteTrajet.ajouterTrajet();
-package gestiontransport;
 
 public class Trajet {
 	// les variables
@@ -36,8 +35,6 @@ public class Trajet {
 		this.dateDepart = dateDepart;
 		this.dateArrive = dateArrive;
 		this.duree = duree;
-package gestiontransport;
-import java.util.Scanner;
 public class ajouteTrajet {
 
 	public static void ajouterTrajet() {
