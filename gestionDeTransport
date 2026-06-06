@@ -104,6 +104,17 @@ break;
 		 case 3:
 			 //liste des passagers 
 			 listPassagers.afficherPassagers(listePassagers);
+// Affichage de liste
+	for(Passager p : listePassagers) {
+		System.out.println("ID: " + p.idPassager);
+		System.out.println("NOM: " + p.nom);
+		System.out.println("PRENOM: " +p.prenom);
+		System.out.println("Numero de telephone: " +p.numeroTelephone);
+		System.out.println("-----------------------------");
+	}
+	
+}
+}
 			 break;
 		 case 0:
 			 System.out.println("Au revoir !");
