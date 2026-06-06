@@ -1,0 +1,13 @@
+
+package gestiontransport;
+public class Reservation {
+	// les variables 
+	int idPassager, idTrajet, idReservation;
+	//creation du constructeur (pouvoir faire un lien entre passager et trajet)
+	public Reservation(int idPassager, int idTrajet, int idReservation) {
+		this.idPassager = idPassager;
+		this.idTrajet = idTrajet;
+		this.idReservation = idReservation;
+
+}
+}

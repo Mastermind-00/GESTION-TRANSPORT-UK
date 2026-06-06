@@ -24,6 +24,18 @@ public class MENU {
 		 case 2 :
 			 //reserve une place
 			 ReservePlace.reserverPlace(listePassagers);
+
+public class Reservation {
+	// les variables 
+	int idPassager, idTrajet, idReservation;
+	//creation du constructeur (pouvoir faire un lien entre passager et trajet)
+	public Reservation(int idPassager, int idTrajet, int idReservation) {
+		this.idPassager = idPassager;
+		this.idTrajet = idTrajet;
+		this.idReservation = idReservation;
+
+}
+}
 			break;
 		 case 3:
 			 //liste des passagers 

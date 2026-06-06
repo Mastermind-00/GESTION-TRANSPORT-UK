@@ -23,6 +23,7 @@ public class MENU {
 			 break;
 		 case 2 :
 			 //reserve une place
+
 			 ReservePlace.reserverPlace(listePassagers);
 			break;
 		 case 3:
