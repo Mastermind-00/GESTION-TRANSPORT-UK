@@ -9,7 +9,7 @@ public class MENU {
 	int choix;
 	Scanner clavier = new Scanner(System.in);
 	do {
-		System.out.println("===GESTION DE TRANSPORT===");
+		System.out.println("===GESTION DE TRANSPORT ===");
 		System.out.println("1. Ajouter un trajet");
 		System.out.println("2. Reserve une place");
 		System.out.println("3. Liste des passagers");
